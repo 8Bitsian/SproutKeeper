@@ -9,7 +9,6 @@ from PyQt5.QtWidgets import Application
 from PyQt5.QtCore import QFile, QtextStream
 from ui.window import MainWindow
 
-# Loads the QSS stylesheet for the program
 def load_stylesheet(app,filepath):
   """Loads the QSS stylesheet"""
   file = QFile(filepath)
@@ -19,8 +18,8 @@ def load_stylesheet(app,filepath):
   else:
     print(f"Could not load stylesheet: {filepath}")
 
-# Runs the main program
 def main():
+  """Runs the main program"""
   # Ensure the app can find resources relative to the main.py file
   base_dir = os.path.dirname(os.path.abspath(__file__))
   os.chdir(base_dir)
