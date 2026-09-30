@@ -26,6 +26,10 @@ def main():
   
   app = QApplication(sys.argv)
 
+  # Load Stylesheets from the `styles` directory
+  load_stylesheet(app, 'styles/styles.qss')
+
+  # Initialize and show main window
   window = ManWindow()
   window.show()
 
