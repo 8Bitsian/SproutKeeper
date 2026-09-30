@@ -1,0 +1,50 @@
+/* General Window Styling */
+QMainWindow {
+    background-color: #f4f7f6;
+}
+
+/* List Widget Styling */
+QListWidget {
+    background-color: #ffffff;
+    border: 1px solid #d1d8d6;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+QListWidget::item {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+QListWidget::item:selected {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 4px;
+}
+
+/* Input Fields */
+QLineEdit, QSpinBox {
+    padding: 8px;
+    border: 1px solid #cfd8dc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+
+QLineEdit:focus, QSpinBox:focus {
+    border: 1px solid #4caf50;
+}
+
+/* Labels */
+QLabel {
+    font-size: 14px;
+    color: #37474f;
+}
+
+/* Headers */
+QLabel#Header {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2e7d32;
+}
