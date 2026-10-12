@@ -1,36 +1,21 @@
-# Project: SproutKeeper Application
-# File: main.py
-
 # Standard-library imports
-import sys, os
+import sys
 
-# Third-party or local library imports
-from PyQt5.QtWidgets import Application
-from PyQt5.QtCore import QFile, QtextStream
-from ui.window import MainWindow
+# Third-party imports
+from PyQt6.QtWidgets import QApplication
 
-def load_stylesheet(app,filepath):
-  """Loads the QSS stylesheet"""
-  file = QFile(filepath)
-  if file.open(QFile.ReadOnly | QFile.Text):
-    stream = QTextStream(file)
-    app.setStyleSheet(stream.readAll())
-  else:
-    print(f"Could not load stylesheet: {filepath}")
+# Local libary imports
+from ui.app_theme import load_fonts, load_stylesheet
+from ui.windows.main_window import MainWindow
 
 def main():
   """Runs the main program"""
-  # Ensure the app can find resources relative to the main.py file
-  base_dir = os.path.dirname(os.path.abspath(__file__))
-  os.chdir(base_dir)
-  
   app = QApplication(sys.argv)
 
-  # Load Stylesheets from the `styles` directory
-  load_stylesheet(app, 'styles/styles.qss')
-
-  # Initialize and show main window
-  window = ManWindow()
+  load_fonts()
+  load_stylesheet(app)
+  
+  window = MainWindow()
   window.show()
 
   sys.exit(app.exec__())
