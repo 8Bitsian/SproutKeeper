@@ -1,6 +1,19 @@
+/*
+Font family downloaded from https://fonts.google.com/
+Color pallete generated from https://coolors.co/cbdd7e-261c15-f7f7f2-e4e6c3-44744a
+COLORS Dictonary from app_theme.py
+  "LIME_CREAM": "CBDD7E",
+  "COFFEE_BEAN": "261C15",
+  "PORCELIAN": "F7F7F2",
+  "BEIGE": "E4E6C3",
+  "FERN": "44744A"
+*/
+
+/* Application */
+
 /* General Window Styling */
 QMainWindow {
-    background-color: #f4f7f6;
+    background-color: {{}};
 }
 
 /* List Widget Styling */
