@@ -1,11 +1,17 @@
 /*
-Font family downloaded from https://fonts.google.com/
-Color pallete generated from https://coolors.co/cbdd7e-261c15-f7f7f2-e4e6c3-44744a
+Font families downloaded from https://fonts.google.com/
+  Chango
+  - Title size 40px weight 400 (regular)
+  Nunito
+  - Heading size 32px weight 700 (bold)
+  - Regular size 24px weight 400 (regular)
+  - Caption size 20px weight 300 (light)
+Color pallete generated from https://coolors.co/261c15-e4e6c3-f7f7f2-cbdd7e-44744a
 COLORS Dictonary from app_theme.py
-  "LIME_CREAM": "CBDD7E",
   "COFFEE_BEAN": "261C15",
-  "PORCELIAN": "F7F7F2",
   "BEIGE": "E4E6C3",
+  "PORCELIAN": "F7F7F2",
+  "LIME_CREAM": "CBDD7E",
   "FERN": "44744A"
 */
 
@@ -13,13 +19,15 @@ COLORS Dictonary from app_theme.py
 
 /* General Window Styling */
 QMainWindow {
-    background-color: {{}};
+    background-color: {{PORCELIAN}};
+    color: {{COFFEE_BEAN}}
+    font-family: 
 }
 
 /* List Widget Styling */
 QListWidget {
-    background-color: #ffffff;
-    border: 1px solid #d1d8d6;
+    background-color: {{}};
+    border: 1px solid {{}};
     border-radius: 8px;
     font-size: 14px;
     padding: 5px;
@@ -27,11 +35,11 @@ QListWidget {
 
 QListWidget::item {
     padding: 10px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid {{}};
 }
 
 QListWidget::item:selected {
-    background-color: #e8f5e9;
+    background-color: {{}};
     color: #2e7d32;
     border-radius: 4px;
 }
@@ -39,25 +47,25 @@ QListWidget::item:selected {
 /* Input Fields */
 QLineEdit, QSpinBox {
     padding: 8px;
-    border: 1px solid #cfd8dc;
+    border: 1px solid {{}};
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: {{}};
     font-size: 14px;
 }
 
 QLineEdit:focus, QSpinBox:focus {
-    border: 1px solid #4caf50;
+    border: 1px solid {{}};
 }
 
 /* Labels */
 QLabel {
     font-size: 14px;
-    color: #37474f;
+    color: {{}};
 }
 
 /* Headers */
 QLabel#Header {
     font-size: 22px;
     font-weight: bold;
-    color: #2e7d32;
+    color: {{}};
 }
