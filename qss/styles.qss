@@ -6,13 +6,15 @@ Font families downloaded from https://fonts.google.com/
   - Heading size 32px weight 700 (bold)
   - Regular size 24px weight 400 (regular)
   - Caption size 20px weight 300 (light)
-Color pallete generated from https://coolors.co/261c15-e4e6c3-f7f7f2-cbdd7e-44744a
-COLORS Dictonary from app_theme.py
+
+Color pallete generated from https://coolors.co/261c15-533f4a-44744a-cbdd7e-e4e6c3-f7f7f2/
+COLORS Dictionary from app_theme.py
   "COFFEE_BEAN": "261C15",
+  "CREEPER": "533F4A",
+  "FERN": "44744A",
+  "CREAM": "CBDD7E",
   "BEIGE": "E4E6C3",
   "PORCELIAN": "F7F7F2",
-  "LIME_CREAM": "CBDD7E",
-  "FERN": "44744A"
 */
 
 /* Application */
