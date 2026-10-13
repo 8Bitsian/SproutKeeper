@@ -8,7 +8,7 @@ from PyQt6.QtGui import QFontDatabase
 # Global variables
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Geneated colors from https://coolors.co/cbdd7e-261c15-f7f7f2-e4e6c3-44744a
+# Geneated colors from https://coolors.co/
 COLORS = {
   "COFFEE_BEAN": "261C15",
   "CREEPER": "533F4A",
