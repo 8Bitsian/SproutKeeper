@@ -10,11 +10,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Geneated colors from https://coolors.co/cbdd7e-261c15-f7f7f2-e4e6c3-44744a
 COLORS = {
-  "LIME_CREAM": "CBDD7E",
   "COFFEE_BEAN": "261C15",
-  "PORCELIAN": "F7F7F2",
-  "BEIGE": "E4E6C3",
+  "CREEPER": "533F4A",
   "FERN": "44744A",
+  "CREAM": "CBDD7E",
+  "BEIGE": "E4E6C3",
+  "PORCELIAN": "F7F7F2",
 }
 
 def load_fonts():
