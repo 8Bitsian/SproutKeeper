@@ -20,34 +20,29 @@ COLORS Dictionary from app_theme.py
 /* Application */
 
 /* General Window Styling */
-QMainWindow {
+QMainWindow, QWidget {
     background-color: {{PORCELIAN}};
+    font-family: "Nunito";
+    font-weight: 300;
+    font-size: 20px;
     color: {{COFFEE_BEAN}}
-    font-family: 
 }
 
-/* List Widget Styling */
-QListWidget {
-    background-color: {{}};
-    border: 1px solid {{}};
-    border-radius: 8px;
-    font-size: 14px;
-    padding: 5px;
+/* Labels */
+QLabel {
+    background-color: transparent;
 }
 
-QListWidget::item {
-    padding: 10px;
-    border-bottom: 1px solid {{}};
-}
-
-QListWidget::item:selected {
-    background-color: {{}};
-    color: #2e7d32;
-    border-radius: 4px;
+/* Headers */
+QLabel#Header {
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: bold;
+    color: {{}};
 }
 
 /* Input Fields */
-QLineEdit, QSpinBox {
+QLineEdit {
     padding: 8px;
     border: 1px solid {{}};
     border-radius: 4px;
@@ -55,19 +50,6 @@ QLineEdit, QSpinBox {
     font-size: 14px;
 }
 
-QLineEdit:focus, QSpinBox:focus {
+QLineEdit:focus {
     border: 1px solid {{}};
-}
-
-/* Labels */
-QLabel {
-    font-size: 14px;
-    color: {{}};
-}
-
-/* Headers */
-QLabel#Header {
-    font-size: 22px;
-    font-weight: bold;
-    color: {{}};
 }
