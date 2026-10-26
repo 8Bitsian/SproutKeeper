@@ -5,8 +5,8 @@
 from pathlib import Path
 
 # Third-party or local library imports
-from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QMainWindow, QWidget
+from PyQt6.QtGui import QIcon
+from PyQt6.QtWidgets import QMainWindow, QWidget
 from services.plant_care import PlantService
 from ui.buttons import create_buttons
 from ui.layouts import create_main_layout
